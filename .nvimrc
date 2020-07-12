@@ -44,6 +44,9 @@ Plug 'coachshea/vim-textobj-markdown'
 
 Plug 'davidhalter/jedi-vim'   " jedi for python
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
