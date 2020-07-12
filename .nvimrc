@@ -131,7 +131,7 @@ set background=light
 set termguicolors
 colorscheme NeoSolarized
 
-"
+" vim airline
 let g:airline_theme='solarized'
 
 " disable banner in file explorter
