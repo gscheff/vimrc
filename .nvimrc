@@ -32,6 +32,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 
 Plug 'iCyMind/NeoSolarized'
+Plug 'airblade/vim-gitgutter'  " show git changes to files in gutter
 
 Plug 'mileszs/ack.vim'
 
@@ -153,3 +154,8 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Git Gutter
+set updatetime=100
+let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
