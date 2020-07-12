@@ -131,6 +131,9 @@ set background=light
 set termguicolors
 colorscheme NeoSolarized
 
+"
+let g:airline_theme='solarized'
+
 " disable banner in file explorter
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
