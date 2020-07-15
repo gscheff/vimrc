@@ -30,17 +30,22 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 Plug 'iCyMind/NeoSolarized'
 Plug 'airblade/vim-gitgutter'  " show git changes to files in gutter
-
 Plug 'mileszs/ack.vim'
 
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-fold'
 Plug 'kana/vim-textobj-indent'
-Plug 'bps/vim-textobj-python'
 Plug 'coachshea/vim-textobj-markdown'
+Plug 'bps/vim-textobj-python'
+
+Plug 'christoomey/vim-system-copy'
+Plug 'christoomey/vim-sort-motion'
 
 Plug 'davidhalter/jedi-vim'   " jedi for python
 
@@ -152,6 +157,24 @@ set clipboard=unnamed
 " easier moving of code blocks
 vnoremap < <gv
 vnoremap > >gv
+
+" set tabs to have 4 spaces
+set ts=4
+
+" indent when moving to the next line while writing code
+set autoindent
+
+" expand tabs into spaces
+set expandtab
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+
+" show a visual line under the cursor's current line
+"set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
 
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
